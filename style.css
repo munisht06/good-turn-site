@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@700&display=swap');
+:root { --ink: #14213D; --muted: #46526B; --accent: #1D4ED8; --ground: #F5F7FB; --card: #FFFFFF; --line: #D5DBE8; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 19px/1.55 'Atkinson Hyperlegible', system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header a { display: flex; align-items: center; gap: 14px; color: var(--ink); text-decoration: none; }
+header span { font: 700 28px/1 'Bricolage Grotesque', sans-serif; }
+h1 { font: 700 40px/1.1 'Bricolage Grotesque', sans-serif; margin: 0 0 12px; }
+h2 { font: 700 26px/1.2 'Bricolage Grotesque', sans-serif; margin: 36px 0 8px; }
+p, li { max-width: 62ch; }
+a { color: var(--accent); }
+.muted { color: var(--muted); }
+.card { background: var(--card); border: 2px solid var(--line); border-radius: 16px; padding: 20px; margin: 16px 0; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font-size: 16px; color: var(--muted); border-bottom: 2px solid var(--ink); }
+nav { margin-top: 48px; padding-top: 20px; border-top: 2px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 24px; }
+ol li, ul li { margin: 6px 0; }
