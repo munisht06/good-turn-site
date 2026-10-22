@@ -18,3 +18,5 @@ th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; borde
 th { font-size: 16px; color: var(--muted); border-bottom: 2px solid var(--ink); }
 nav { margin-top: 48px; padding-top: 20px; border-top: 2px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 24px; }
 ol li, ul li { margin: 6px 0; }
+.button { display: inline-block; min-height: 52px; padding: 12px 20px; border-radius: 14px; background: var(--accent); color: #FFFFFF; font-weight: 700; text-decoration: none; }
+.button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }

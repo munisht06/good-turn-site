@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get the app · Good Turn</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+  // FAM-4: send each phone to the right app. Anything else sees both choices below.
+  (function () {
+    var ua = navigator.userAgent;
+    var iphone = /iphone|ipod|ipad/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+    if (iphone) location.replace('https://apps.apple.com/app/id6822105920');
+    else if (/android/i.test(ua)) location.replace('https://app.goodturn.mtanwar.com/');
+  })();
+</script>
+</head>
+<body>
+<main>
+<header><a href="../index.html"><svg role="img" aria-label="Good Turn logo" width="44" height="44" viewBox="60 60 400 400"><path d="M 402.7 236.8 A 150 150 0 1 1 287.2 121.3" fill="none" stroke="#14213D" stroke-width="58" stroke-linecap="round"/><path d="M 182 268 L 240 326 L 378 146" fill="none" stroke="#1D4ED8" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Good Turn</span></a></header>
+<h1>Get Good Turn</h1>
+<p>Open this page on your phone, or choose your kind of phone.</p>
+<div class="card">
+<h2 style="margin-top:0">iPhone</h2>
+<p>Get the app from the App Store.</p>
+<p><a class="button" href="https://apps.apple.com/app/id6822105920">Open the App Store</a></p>
+</div>
+<div class="card">
+<h2 style="margin-top:0">Android</h2>
+<p>Open the web app in Chrome, then add it to your Home screen.</p>
+<p><a class="button" href="https://app.goodturn.mtanwar.com/">Open the web app</a></p>
+</div>
+<p>Then sign in with your email and type your family code.</p>
+<nav aria-label="Pages"><a href="../index.html">Home</a><a href="../privacy.html">Privacy policy</a><a href="../support.html">Help and support</a><a href="../delete-account.html">Delete your account</a></nav>
+</main>
+</body>
+</html>
